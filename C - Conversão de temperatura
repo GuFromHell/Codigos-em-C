@@ -1,0 +1,32 @@
+// Comando usado para conversão de temperatura Celsius para Fahrenheit e Kelvin.
+// 
+//             GU FROM HELL
+//
+// GitHub code...
+//
+// github.com/GuFromHell
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() // Inicio da programação.
+{
+    float c, f, k ;// Definição de variáveis.
+
+    /* C = CELSIUS
+       F =  FAHRENHEIT
+       K = KELVIN */
+
+    printf("O programa escolhido converte celsius em fahrenheit e kelvin mestre!\n"); // Mostrar na tela informação.
+    printf("\nDigite o grau em celsius para conversao:"); // Mostrar na tela informação.
+    scanf("%f", &c); // Salvar dados dos graus celsius
+
+    f = c * 1.8 + 32 ; // Equação efetuada de C para F.
+    k = c + 273.15 ; // Equação efetuada de C para K.
+
+        printf("\nA temperatura em fahrenheit e %2.f F", f); // Mostra na tela resultado do F.
+        printf("\nA temperatura em kelvin e %2.f K", k); // Mostra na tela resultado do K.
+
+        return 0; // Final do código.
+}
