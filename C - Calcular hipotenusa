@@ -1,0 +1,29 @@
+// Comando usado para cálculo de hipotenusa.
+// 
+//             GU FROM HELL
+//
+// GitHub code...
+//
+// github.com/GuFromHell
+
+#include <stdio.h>
+#include <math.h>
+
+int main () { // Inicio do programa.
+
+    float v1,v2, R; // Declarando as variáveis.
+
+    printf("Ola, para calcular a hipotenusa coloque os valores abaixo :).\n"); // Apresentação.
+    printf("Coloque o primeiro valor:"); // Mostrar na tela para por o valor.
+    scanf("%f",&v1); // Salvar os dados do primeiro valor.
+
+    printf("\nColoque o segundo valor:"); // Mostrar na tela para por valor.
+    scanf("%f",&v2); // Salvar os dados do segundo valor.
+
+    R = sqrt((v1*v1) + (v2*v2)); //Calcular hipotenusa.
+
+    printf("Resultado: %2.f", R); // Mostrar o resultado.
+
+    return 0; // Final dos comandos.
+    
+}
