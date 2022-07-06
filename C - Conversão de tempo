@@ -1,0 +1,38 @@
+// Comando usado para conversão de horas para minutos e de minutos para segundos.
+// 
+//             GU FROM HELL
+//
+// GitHub code...
+//
+// github.com/GuFromHell
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () { // Inicio
+
+    float h, m , s, r1, r2 ,r; // Definição de variáveis.
+
+    printf("Escolha horas, minutos e segundos e te devolverei tudo em segundos.\n"); // Mostrar na tela.
+    printf("\nQuantidade em horas:"); // Mostrar na tela
+    scanf("%f", &h); // Salvar os dados em horas.
+
+    sleep(1); // Deelay de decoração.
+
+    printf("\nQuantidade em minutos:"); // Mostrar na tela.
+    scanf("%f", &m); // Salvar os dados em minutos.
+
+    sleep(1); // Deelay de decoração
+
+    printf("\nQuantidade em segundos:"); // Mostrar na tela.
+    scanf("%f", &s); // Salvar os dados em segundos.
+
+    r1 = h * 60 ; // Hora pra minuto.
+    r2 = (r1 + m) * 60 ; // Minutos pra segundos
+    r = r2 + s ; // Soma dos segundos com o já obtido acima.
+
+    printf("\nO total de segundos dos numeros escolhidos sao:%2.f\n", r); // Mostrar quantos segundos na tela.
+
+    return 0; // Final
+
+}
